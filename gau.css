@@ -1,160 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-
-body,html{
+body, html {
     background-color: wheat;
- margin:0;
- padding: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
- img{
+img {
     height: 80px;
-  
-   
 }
-header{
-   display: flex;
-    height:80px;
+
+header {
+    display: flex;
+    height: 80px;
     background-color: rgb(245, 245, 245);
-   border-bottom: 5px solid black;
-   justify-content:space-between;
-   align-items: center;
-   max-width: 100%;
-   
-    
+    border-bottom: 5px solid black;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
-.logo_container{
+
+.logo_container {
     margin-left: 4%;
 }
-.nav_bar{
+
+.nav_bar {
     height: 35px;
-    min-width:500px;
-    padding: 35px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex: 1;
 }
-.nav_bar a{
-    display: flex;
-    justify-content: space-evenly;
+
+.nav_bar a {
     text-decoration: none;
     font-size: 14px;
     letter-spacing: .3px;
-    color:black;
+    color: black;
     text-transform: uppercase;
-   
     font-weight: 900;
 }
 
-.nav_bar a:hover{
+.nav_bar a:hover {
     border-bottom: 5px solid wheat;
-    padding-bottom: 0px;
 }
-.search_bar{
+
+.search_bar {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
 }
-.search_icon{
-    height: 20px;
-    padding: 10px;
-    color:orangered;
-    font-weight: 700;
-}
-.search_input{
-    height: 15px;
+
+.search_input {
+    height: 35px;
     min-width: 300px;
-    padding-bottom: 15px;
-    border-color: blue;
     border: 3px solid black;
-   
-    
+    padding: 0 10px;
 }
 
-.action_bar{
+.action_bar {
     display: flex;
-    min-width: 200px;
     justify-content: space-evenly;
-
+    min-width: 200px;
 }
-.action_container{
+
+.main-h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-container, .items_container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-h1{
-    text-align: center;
-}
-
-.main-container{
-margin-left:20px;
-text-align: center;
-display: flex;
-margin: 10px;
-column-gap: 10px;
-flex-wrap: wrap;
-align-items: center;
-}
-.go1{
-    margin-left: 15px;
-    text-align: center;
-    width:250px;
-   height: 300px;
-    
-}
-
-
-.items_container{
-    margin-top: 25px;
-    margin-left:40px;
-    text-align: center;
-    display: flex;
-    margin-left: 20px;
-    column-gap: 10px;
     flex-wrap: wrap;
-    align-items: center;
-    margin-right: 10px;
-
-}
-.Pro{
-    text-align: center;
-    text-decoration:underline;
-    text-decoration-color: black;
-}
-.item1{
-    margin-left: 15px;
-    text-align: center;
-    width:250px;
-   height: 300px;
+    justify-content: center;
+   flex-direction: row;
+    margin: 0 auto;
+   column-gap: 15px;
+  
 }
 
-Footer{
+.item1, .go1 {
+    width: 250px;
+    height: 300px;
+}
+
+footer {
     background-color: cornsilk;
     width: 100%;
-    height:350px;
-}
-.footer_container{
-    display: flex;
-    
-    padding: 30px;
-    
-    align-items: center;
-   justify-content: space-evenly;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.footer_column{
+.footer_container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
+    justify-content: center;
+    gap: 20px;
 }
-.krsna{
+
+.bag-item-count {
+    background-color: #ff905a;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    background: #ff3f6c;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    right: 13px;
+    top: -20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Pro{
+    text-align: center;
+    text-decoration: dashed;
+    border: 2px solid blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-width: 5px;
+    border-radius: 10px;
+}
+.item-name{
     text-align: center;
 }
-.copyright{
 
-    color:#ff3f6c;
-    text-align: end;
-    padding: 15px;
+.add-to-bag{
+
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    background-color: lightgreen;
+    border:none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
 }
